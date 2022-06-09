@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
         selectedColor.blue.toString();
 
     final response = await http.get(
-        Uri.parse('http://thecolorapi.com/id?rgb=$rgb'),
+        Uri.parse('https://www.thecolorapi.com/id?&rgb=$rgb'),
         headers: {"Accept": "application/json"});
 
     if (response.statusCode == 200) {
